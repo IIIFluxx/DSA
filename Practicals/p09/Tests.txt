@@ -1,0 +1,86 @@
+All tested with n=1000
+
+Merge Sort
+    Random data: 192
+    Nearly Sorted: 192
+    Descending: 167
+    Ascending: 147
+
+Features:
+	Good speed	
+    Stable sort
+    Best, avg & worst cases are all -- O(n log N)
+    Not an in-place sort
+
+.:.........................................................................:.
+
+Quick Sort (Left-most pivot)
+    Random data: 91
+    Nearly sorted: 249
+    Descending: 1427
+    Sorted (Ascending): 1357
+	
+Features:
+    Relatively slow - worst case is O(N2).
+    Has its flaws with pivot selection - e.g. when many duplicate values are present - cannot evenly split sub-array. Can't deal with already sorted data well.
+    Quick algorithm, so is O(N log N) but can degrade to O(N^2) as aforementioned.
+    In place sort
+    Unstable sort
+
+.:.........................................................................:.
+
+Quick Sort (Median of 3 pivot)
+    Random data: 85
+    Nearly sorted: 150
+    Descending: 1229
+    Sorted (Ascending): 950
+	
+Features:
+    Quicker than the left-most pivot because of a better pivot selection.
+    Generally quick sort, so is O(N log N) but can also degrade to O(N^2) which would be slow.
+    In place sort    
+    Unstable sort
+
+.:.........................................................................:.
+
+3-Way Quicksort
+    Random data: 125
+    Nearly sorted: 224
+    Descending: 1719
+    Sorted (Ascending): 1771
+
+ Features:
+	Better with data that contain a large amount of duplicate data
+	
+-------------
+Comparison:
+
+Quicksort: 
+	- When you don't need a stable sort and average case performance matters more than worst case performance. 
+		- Because instable - it does not preserve the relative order of equal keys.
+	- Usually the fastest on average, but consider its bad worst-case behavior. 
+	- So if you have to guarantee no bad data gives you O(N^2), you should avoid it.
+	- Performs badly if the file is already sorted
+
+
+Merge sort:
+	- O(N log N) algorithm in the average and worst cases. 
+	- Best for sorting where sequential access is required.
+	
+Table: https://i.imgur.com/1XA3J9p.png
+
+	- Quick sort is more efficient and works faster than merge sort when the array size n/dataset size is small.
+	- Merge sort works fine on any size data/array. Its speed is consistent with any size of data.
+	
+	
+---------------------
+Insertion: 
+	- When N is guaranteed to be small
+	- When items are mostly sorted already
+	- If a small algorithm is desired?
+
+Bubble:
+	- Best avoided.
+
+Selection:
+	- Works best with small files.

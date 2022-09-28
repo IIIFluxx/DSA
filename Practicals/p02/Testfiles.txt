@@ -1,0 +1,40 @@
+ *
+ * GCD Tests. Source: https://codereview.stackexchange.com/questions/183211/find-the-greatest-common-divisor-with-unit-tests
+ * ----------
+ * 1. gcd(42, 56) = 14 [✔]
+ * 2. gcd(461952, 116298) = 18 [✔]
+ * 3. gcd(7966496, 314080416) = 32 [✔]
+ * 4. gcd(24826148, 45296490) = 526 [✔]
+ * 5. gcd(12, 0) = 12 [✔]
+ * 6. gcd(0, 0) = 0 [✔]
+ * 7. gcd(0, 9) = 9 [✔]
+ 
+	<<<[Tests all succeeded.]>>>
+ 
+ 
+ *
+ * Factorial Tests. Source: https://www.softwaretestingo.com/factorial-test-cases/
+ * ----------
+ * 1. Integer value at lower boundary [ 0 ] [✔]
+ * 2. Integer value at lower boundary +1 [ 1 ] [✔]
+ * 3. Integer value with leading 0 [✔]
+ * 4. Integer value with leading space [✔]
+ * 5. Number with a decimal point [✔]
+ * 6. Number with the letter ‘e’ in it [✔]
+ * 7. Special character(s) [ex: !@#$^] [✔]
+ * 8. With only space [✔]
+ * 9. With nothing entered [✔] 
+ 
+ <<<[Tests all succeeded.]>>>
+ 
+  *
+ * Conversion Tests. Source: 
+ * ----------
+ * 1. 
+ * 2. 
+ * 3. 
+ * 4. 
+ * 5. 
+ * 6. 
+ * 7. 
+ 

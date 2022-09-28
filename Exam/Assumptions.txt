@@ -1,0 +1,5 @@
+- The assignment specification only specifies that the first question be *thoroughly tested*, and so whilst I've tested everything in all harnesses,
+	I've only implemented "a score at the end to indicate tests passed out of the total tested" for the Trees question (Q1) only.
+
+
+- Assumed that the displayAsMatrix() method only works (well) with single-digit/character values as headers (on the axis titles). I've attempted to pad spaces.

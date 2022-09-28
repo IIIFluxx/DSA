@@ -1,0 +1,4 @@
+For Factorials, using integers/long will work for numbers up until 20. Anything bigger than 20 will cause the program to fail because the results would be too large to fit into a long, which evidently causes an overflow.
+
+For anything larger than 20, we'd need to use another data-type called BigInteger, which hasn't been taught in the unit.
+

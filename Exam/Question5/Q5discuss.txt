@@ -1,0 +1,25 @@
+Question 4c
+==========
+Student Name: Bharath Sukesh
+Student ID: 19982634
+
+Questions:
+	I. the heights of the resultant trees - how do they compare for the same input values?
+	II. Compare the understandability of the algorithms, which would be easier to implement?
+==========================
+==========================
+
+I. 
+	The 2-3-4 and B-Trees will often have a lower height than red-black trees 
+	as they store more keys per node. The three aforementioned trees will 
+	have less overall height than a Binary Search Tree, as they are self-balancing,
+	whereas a Binary Search Tree is not. 
+
+II. 
+	A normal BST has a simpler algorithm to implement than any of the self-balancing trees. I think the 2-3-4
+	tree would be the easiest to implement, as it has a fixed size, and an understandable strategy for splitting nodes.
+	
+	2-3-4 trees are implemented similarly to Red-Black Trees, so they would have the same level of complexity to implement. 
+	
+	I think that B-Trees would be the hardest out of the three self-balancing trees to implement, as its splitting strategy is
+	a bit more complicated than the other two to implement. 

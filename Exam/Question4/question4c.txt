@@ -1,0 +1,29 @@
+Question 4c
+==========
+Student Name: Bharath Sukesh
+Student ID: 19982634
+
+Q: Based on the output from parts a) and b), and your knowledge of collision handling, discuss the differences between the two strategies.
+==========================
+==========================
+
+Clusters can form in linear probing, which is where quadratic probing is advantageous, as it works by taking the hash index and probing to a wider area
+by probing 'quadratically' (separates cells at a wider gap, so we skip regions in the table), instead of those adjacent to an existing hash site, 
+and the probe works until an empty region is found.
+
+But this leads to a different type of clustering called 'Secondary Clustering', which is something that Double Hashing avoids completely. 
+This happens because the quadratic probing algorithm uses the same steps each time - it has quadratic growth in steps and hence we go from 1 to 4 to 9 to 16 etc.
+Another issue of Quadratic Probing that Double Hashing avoids, is that if the table fills up, it may struggle to find free remaining spots for the hash index. 
+
+Double Hashing uses the approach of applying a second hash function to the key when a collision occurs. 
+Thus the hash index is determined by the second hash function. The probe sequence is determined dependent on the key itself, instead of it being repeated for every key. 
+This leads to different keys having different probing sequences, which eradicates any issue of primary or secondary clusters. 
+
+- Because of this, given the table size is prime, double hashing will always find a free spot.
+
+- Double Hashing does not result in any primary or secondary clustering, whereas Quadratic Probing is prone to Secondary clusters (but *greatly* reduces Primary clusters)
+
+- However, due to there being two hash functions needing to be computed, Double Hashing experiences more computational time. 
+
+==========================
+==========================
